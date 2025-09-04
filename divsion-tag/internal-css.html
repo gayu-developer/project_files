@@ -31,8 +31,8 @@
         }
 
         h1 {
-            color:black;
-            background-color:pink;
+            color: black;
+            background-color: pink;
         }
     </style>
 </head>
@@ -54,17 +54,31 @@
 <head>
     <title>
         Internal css
-    </title>    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
         /* declartion */
+        .main-container {
+            position: relative;
+        }
+
         .top-container {
             width: 1000px;
             height: 200px;
-            background-color:beige;
-            color:black;
+            background-color: beige;
+            color: black;
             font-weight: 100;
+
             font-size: large;
             text-decoration: underline;
             font-family: "Henny Penny", system-ui;
@@ -75,10 +89,20 @@
             border-width: 5px;
             border-color: black;
             box-shadow: 8px 6px 10px pink;
+            border-radius: 10px;
+            position:;
+            top: 15px;
+            left: 300px;
+            right: 300px;
+
+
+
+
 
 
         }
-             .middle-container {
+
+        .middle-container {
             width: 1000px;
             height: 300px;
             background-color: cadetblue;
@@ -86,14 +110,22 @@
             font-weight: 100;
             font-size: large;
             text-decoration: underline;
-            font-family:"Henny Penny", system-ui;
+            font-family: "Henny Penny", system-ui;
             text-align: center;
             font-style: oblique;
             text-shadow: 4px 6px 5px black;
-            border-style:groove;
+            border-style: groove;
             border-width: 5px;
             border-color: black;
             box-shadow: 8px 6px 10px pink;
+            border-radius: 11px;
+            position:;
+            top: 10px;
+            left: 30x;
+            right: 10px;
+
+
+
 
 
 
@@ -113,13 +145,17 @@
             text-align: center;
             font-style: italic;
             text-shadow: 4px 5px 3px;
-            border-style:groove;
+            border-style: groove;
             border-width: 5px;
-            border-color:black;
+            border-color: black;
             box-shadow: 8px 6px 10px pink;
+            border-radius: 11px;
+            position: ;
+            top: 30px;
+            left: 20p;
+            right: 20px;
 
-    
-            
+
 
         }
     </style>
@@ -131,6 +167,7 @@
 
 
     <div class="main container">
+
         <div class="top-container">
             <h1>APPLE</h1>
             <P> An apple is a round, red, and healthy fruit that is sweet and crunchy." </P>
