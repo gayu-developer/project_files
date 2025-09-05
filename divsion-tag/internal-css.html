@@ -70,9 +70,15 @@
         /* declartion */
         .main-container {
             position: relative;
+            display: flex;
+         flex-wrap: wrap;
+         align-content: flex-start;
+         
+
+
         }
 
-        .top-container {
+        .first-container {
             width: 1000px;
             height: 200px;
             background-color: beige;
@@ -90,10 +96,10 @@
             border-color: black;
             box-shadow: 8px 6px 10px pink;
             border-radius: 10px;
-            position:;
+            position: static;
             top: 15px;
-            left: 300px;
-            right: 300px;
+            left: 20px;
+            right: 30px;
 
 
 
@@ -102,7 +108,7 @@
 
         }
 
-        .middle-container {
+        .second-container {
             width: 1000px;
             height: 300px;
             background-color: cadetblue;
@@ -119,7 +125,7 @@
             border-color: black;
             box-shadow: 8px 6px 10px pink;
             border-radius: 11px;
-            position:;
+            position: static;
             top: 10px;
             left: 30x;
             right: 10px;
@@ -129,11 +135,12 @@
 
 
 
+
         }
 
-        .bottom-container {
+        .third-conatiner {
             width: 1000px;
-            height: 100px;
+            height: 300px;
             background-color: cyan;
             color: black;
             font-weight: 100;
@@ -148,13 +155,39 @@
             border-style: groove;
             border-width: 5px;
             border-color: black;
-            box-shadow: 8px 6px 10px pink;
+            box-shadow: 8px 6px 10px black;
             border-radius: 11px;
-            position: ;
+            position: static;
             top: 30px;
             left: 20p;
             right: 20px;
 
+
+
+        }
+        .fourth-container{
+           width: 1000px;
+            height:300px;
+            background-color: cyan;
+            color: black;
+            font-weight: 100;
+            font-size:small;
+            text-decoration: underline;
+            font-family: "Henny Penny", system-ui;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-style: italic;
+            text-shadow: 4px 5px 3px;
+            border-style: groove;
+            border-width: 5px;
+            border-color: black;
+            box-shadow: 8px 6px 10px rgb(64, 97, 135);
+            border-radius: 11px;
+            position: static;
+            top: 30px;
+            left: 20p;
+            right: 20px;
 
 
         }
@@ -166,20 +199,30 @@
 
 
 
-    <div class="main container">
+    <div class="main-container">
 
-        <div class="top-container">
+        <div class="first-container">
             <h1>APPLE</h1>
             <P> An apple is a round, red, and healthy fruit that is sweet and crunchy." </P>
+
         </div>
-        <div class="middle-container">
+        
+        <div class="second-container">
             <h1>lotus</h1>
             <p> Loutus is a beautiful flower</p>
+            <p>
+                loutus is a beautiful flower
+            </p>
         </div>
-        <div class="bottom-container">
+        <div class="third-container">
             <h1>lion</h1>
             <p>lion is a very dangerous anamial</p>
 
+
+        </div>
+        <div class="fourth-container">
+          <h1>peacock</h1>
+          <p> peacock is a national border-width</p>
         </div>
     </div>
 </body>
