@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .main-container{
+            height: 800px;
+            width: 800px;
+            display:  grid;
+            background-color: crimson;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            
+
+        }
+        .box{
+            background-color: bisque;
+            border-style: solid;
+
+        }
+       
+        .box-one{
+            background-color: aqua;
+            grid-column: 1/span 4
+        
+        }
+        .box-four{
+            background-color: cadetblue;
+            grid-column: 4/span 2;
+        }
+        .box-eight{
+            background-color: blueviolet;
+            grid-row: 2 / span 2;
+        }
+        .box-fiftheen{
+            background-color: chocolate;
+            grid-row: 3/ span 3;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- main-container -->
+     <div class="main-container">
+    <div class="box box-one">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box box-four">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <!-- rown 2 -->
+    <div class="box">7</div>
+    <div class="box box-eight">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+    <!-- row 3 -->
+    <div class="box">13</div>
+    <div class="box">14</div>
+    <div class="box box-fiftheen">15</div>
+    <div class="box">16</div>
+    <div class="box">17</div>
+    <div class="box">18</div>
+    <!-- row 4 -->
+    <div class="box">19</div>
+    <div class="box">20</div>
+    <div class="box">21</div>
+    <div class="box">22</div>
+    <div class="box">23</div>
+    <div class="box">24</div>
+    </div>
+
+</body>
+
+</html>

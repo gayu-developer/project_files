@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(93, 169, 172);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+
+
+}
+.main-container > div{
+    text-align: center;
+}
+.layout-1{
+    grid-column: 1/span 3;
+    background-color: chartreuse;
+    grid-row: 1/span 3;
+}
+.layout-2{
+    grid-row: 4;
+    grid-row: 1/span 6;
+    background-color: rgb(58, 38, 188);
+}
+.layout-3{
+    grid-column: ;
+    grid-column: 1/span 2;
+    
+    background-color: deeppink;
+}
+.layout-4{
+    grid-column: 1/span 2;
+    background-color:aqua;
+}
+.layout-5{
+    grid-column: 3;
+    grid-row: 4/span 2;
+    background-color: rgb(101, 57, 57);
+}
+.layout-6{
+    background-color:rgb(218, 96, 52) ;
+    grid-column: 1/span 3;
+}
+
+ </style>
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- row 1 -->
+        <div class="layout-1">1</div>
+        <div class="layout-2"></div>
+        <div class="layout-3"></div>
+        <div class="layout-4"></div>
+        <div class="layout-5"></div>
+        <div class="layout-6"></div>
+       
+        
+    </div>
+    
+</body>
+</html>
