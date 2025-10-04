@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            height: 400px;
+            width: 500px;
+            background-color: pink;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            border-style: solid;
+        }
+
+        .box {
+            background-color: rgb(50, 176, 185);
+        }
+
+        .box-1 {
+            background-color: orange;
+            grid-column: span 4;
+        }
+
+        .box-2 {
+            background-color: white;
+            grid-column: span 4;
+        }
+
+        .box-3 {
+            background-color: green;
+            grid-column: span 4;
+        }
+
+        img {
+            height:150px ;
+            width: 150px;
+            margin-left: 165px;
+            margin-top: 10px;
+        }
+    </style>
+    <title>indian flag</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+
+        <div class="box box-1"></div>
+        <div class=" box box-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyd68yGboDZfcbsGqrfJlLrBaCHS96PefMdQ&s" height="100px" width="100px" alt="">
+        </div>
+        <div class=" box box-3"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
