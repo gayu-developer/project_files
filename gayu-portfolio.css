@@ -1,0 +1,111 @@
+body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: auto;
+        }
+        /* header css start------------ */
+        header{
+            width: 100%;
+            height: 80%;
+            background-color:#678692;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            color: white;
+        }
+           
+        ul{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            font-size: 25px;
+        }
+        /* header css end---------- */
+    main{
+        width: 100%;
+        height: auto;
+    }
+        /* home section csss start------- */
+        .home{
+            width: 100%;
+            height: 800px;
+            background-color:#0c2c31;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        .home-content {
+    height: 25%;
+    width: 40%;
+    background-color:#233a41;
+    padding: 20px;
+    color: white;
+}
+
+/* about css */
+.about {
+    height: 80vh;
+    width: 100%;
+    background-color:#5C8374;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-heading {
+    color: rgb(77, 77, 212);
+}
+.about-heading {
+    color: rgb(77, 77, 212);
+}
+
+.left-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* projects section start */
+.projects{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(125, 182, 221);
+}
+.project-heading{
+    display: flex;
+    justify-content: center;
+}
+.row-one{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+.row-two{
+    height: 40%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+    h
