@@ -9,13 +9,14 @@ body {
 header {
     height: 60px;
     width: 100%;
-    background-color: #060e10;
+    background-color: #071012;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     color: white;
     font-style: oblique;
+    
 }
 
 ul {
@@ -24,6 +25,9 @@ ul {
     list-style: none;
     font-size: 25px;
     color: white;
+    text-transform:initial;
+    text-decoration: aliceblue;
+
 }
 
 /* home styling */
@@ -34,6 +38,9 @@ ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-line-dark-background-image_2344719.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-content {
@@ -41,7 +48,7 @@ ul {
     width: 50%;
 
     padding: 10px;
-    color: rgb(26, 14, 14);
+    color: rgb(180, 160, 160);
     justify-content: center;
     align-items: center;
 
@@ -61,6 +68,9 @@ ul {
     flex-direction: column;
     font-size: xx-large;
     justify-content: left;
+    background-image: url("https://dkemhji6i1k0x.cloudfront.net/000_clients/1173818/page/1173818EvT0ftuv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-content {
@@ -80,9 +90,10 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
-    background-color: rgba(0, 0, 0, 0.143);
-    color: white;
+    font-size:x-large;
+    background-color: rgba(216, 194, 194, 0.143);
+    color:rgba(255, 255, 255, 0.771)
+    (230, 160, 167);
     padding: 30px;
 }
 
@@ -97,4 +108,8 @@ ul {
     border-radius: 10px;
 
 
+}
+.down-conatiner{
+    font-size: xx-large;
+    color: white;
 }
