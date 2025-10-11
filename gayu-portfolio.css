@@ -58,10 +58,11 @@ ul {
 .home-image {
     justify-content: left;
 }
+/* about section start */
 
 
 .about {
-    height: 200vh;
+    height: 100vh;
     width: 100%;
     background-color: #d7a6c2;
     display: flex;
@@ -112,4 +113,97 @@ ul {
 .down-conatiner{
     font-size: xx-large;
     color: white;
+}
+.btn-container button{
+    height: 10%;
+    width: 10%; 
+    border: 1re rgb(13, 24, 24);
+    font-size: 1.1rem;
+    padding: 1%;
+    border-radius: .5rem;
+}
+button:nth-child(1){
+    background-color: rgb(52, 95, 95);
+    color: #191517;
+    
+}
+button:nth-child(2){
+    background-color: #50757b;
+    
+    color: #0b1213;
+}
+/* project section start */
+.projects{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(17, 36, 49);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoFyJCcnOjeDZcQ8_v0fbN-opI6O7IP3H_5g&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.project-heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size:xx-large;
+}
+.row-one{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+.box-1{
+    height: 100%;
+    width: 40%;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHWTtN0tA-nSj2UM3Sj3BhDv669DqqVDv3sqW0aaIiU4HSF9Bp_KU6Y4wJgQBP7WMnvXc&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 10px;
+}
+.box-2{
+    height: 100%;
+    width: 30%;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/009/116/859/non_2x/css-logo-css-letter-css-letter-logo-design-initials-css-logo-linked-with-circle-and-uppercase-monogram-logo-css-typography-for-technology-business-and-real-estate-brand-vector.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 10px;
+
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(19, 16, 18);
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-heading{
+    display: flex;
+    justify-content: center;
+    color: beige;
+    font-size: xx-large;
+}
+
+.contact-infor{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: x-large;
+    color: rgb(149, 122, 122);
+    text-transform:initial;
+    text-decoration: rgb(59, 61, 63);
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
