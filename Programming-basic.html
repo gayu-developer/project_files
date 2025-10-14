@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
-        .body{
-margin: 0;
-padding: 0;
+        .body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        .main-container{
+            height: 90vh;
+            width: 90vh;
+            background-color: aqua;
+            border: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .container{
+            height:95% ;
+            width: 95%;
+            background-color: cadetblue;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .display-area{
+            height:90% ;
+            width: 90%;
+            align-items: center;
+            font-size:xx-large;
+        }
+        .click-button{
+            height: 15%;
+            width: 20%;
+            background-color: brown;
+            border: solid;
+            font-weight: 100;
+        }
+
     </style>
     <title></title>
 </head>
+
 <body>
     <div class="main-container">
         <div class="container">
+            <div class="display-area" id=display></div>
             <div class="input-area">
-                <button class="click-button"onclick="gayu()">click</button>
+                <input type="text" class="input-field" id="input-one" placeholder="Give an input">
+                <button class="click-button" onclick="dispalyoutput()">click</button>
             </div>
         </div>
     </div>
 </body>
 <script>
-// fuction is block code which preperforming specific block
-function gayu(){
-    // input
-    let x = 30;
-    // process
-    let y = x * 30;
-    // output
-    console.log()
+    // fuction is block code which preperforming specific block
+    function displayoutput() {
+        // input
+        let x = document.getElementById("input-one").value;
+        // process
+        let y = document.getElementById("display").innerHTML = y;
+        // output
+        document.getElementById
+        console.log()
 
-}
+    }
 </script>
+
 </html>
