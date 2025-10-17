@@ -112,7 +112,7 @@ ul {
 }
 .down-conatiner{
     font-size: xx-large;
-    color: white;
+    color: rgba(223, 229, 229, 0.753);
 }
 .btn-container button{
     height: 10%;
@@ -157,24 +157,24 @@ button:nth-child(2){
 }
 .box-1{
     height: 100%;
-    width: 40%;
+    width: 30%;
     border-style: solid;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHWTtN0tA-nSj2UM3Sj3BhDv669DqqVDv3sqW0aaIiU4HSF9Bp_KU6Y4wJgQBP7WMnvXc&usqp=CAU");
+    background-image: url("https://verpex.com/assets/uploads/images/blog/Free-HTML-Editors.webp?v=1695388726");
     background-size: cover;
     background-repeat: no-repeat;
     gap: 10px;
 }
 .box-2{
     height: 100%;
-    width: 30%;
+    width: 40%;
     border-style: solid;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/009/116/859/non_2x/css-logo-css-letter-css-letter-logo-design-initials-css-logo-linked-with-circle-and-uppercase-monogram-logo-css-typography-for-technology-business-and-real-estate-brand-vector.jpg");
+    background-image: url("https://www.motocms.com/blog/wp-content/uploads/2018/07/css-main-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     gap: 10px;
