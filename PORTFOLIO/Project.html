@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100%;
+            box-shadow: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .Project-title {
+            height: 8%;
+            width: 100%;
+            background-color: rgba(12, 9, 11, 0.708);
+            padding-top: 10px;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+
+
+
+        }
+
+        .row-one {
+
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+        }
+
+        .row-two {
+
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+        }
+
+        .left-box {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box-1 {
+            height: 90%;
+            width: 90%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("https://image.slidesharecdn.com/bankaccountopeningandonlinebanking-170108061237/75/Bank-account-opening-and-online-banking-11-2048.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 3px 3px 3px;
+            box-sizing: border-box;
+            align-items: center;
+
+
+        }
+
+        .left-box-2 {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box-2 {
+            height: 90%;
+            width: 90%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            background-image: url("https://1.bp.blogspot.com/-h095LHE5LDA/X_bRX_U4wSI/AAAAAAAAAHs/zFL1e6o92pYQNrrkLRplq7nwTgH7vm1PwCLcBGAsYHQ/s1280/Responsive%2BRegistration%2BForm%2Bin%2BHTML%2B%2526%2BCSS.webp ");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 3px 3px 3px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+
+        }
+
+        .left-box-3 {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box-3 {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            box-shadow: 10px;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("https://img.freepik.com/free-vector/user-friendly-login-page-screen-template-web-access_1017-58113.jpg?semt=ais_hybrid&w=740&q=80");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 3px 3px 3px;
+            box-sizing: border-box;
+            align-items: center;
+            box-shadow: 4px 4px 4px;
+
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .left-box-4 {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+
+        .box-4 {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("https://images.sampleforms.com/wp-content/uploads/2024/06/Hospital-Registration-Form.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 3px 3px 3px;
+            box-sizing: border-box;
+            align-items: center;
+            box-shadow: 4px 4px 4px;
+
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .left-box-5 {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+        .box-5 {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("https://i.ytimg.com/vi/L8qGPHC9xUc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjKT3jsNoCxjXteAwABiFLxc86Og");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 3px 3px 3px;
+            box-sizing: border-box;
+            align-items: center;
+            box-shadow: 4px 4px 4px;
+
+
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+        }
+
+
+
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #061414;
+            color: #a287aa;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background: #cda4c2;
+            color: #db6565;
+            transform: translateY(-3px);
+        }
+
+
+        .css-main {
+            height: 100vh;
+            width: 100%;
+            box-shadow: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .project-heading {
+            height: 8%;
+            width: 100%;
+            background-color: rgba(189, 176, 188, 0.556);
+            padding-top: 10px;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+        .row-one {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 15px;
+        }
+
+        .box-a {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("https://i.pinimg.com/originals/13/3d/ea/133dea82f7398b428f4e4b8afad0fe93.gif");
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+
+        }
+
+        .box-b {
+            height: 99%;
+            width: 99%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("https://cdn.shopify.com/s/files/1/0630/9543/9612/t/44/assets/afpr%201.gif");
+            background-position-x: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 12px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+
+
+        }
+
+        .box-c {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("https://www.codewithfaraz.com/img/calculator.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .row-two {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+        }
+
+        .box-d {
+            height: 99%;
+            width: 99%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("https://www.uibun.dev/blog/posts/tailwindcss-responsive-grid.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .box-e {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*VVbCbFAzl-c3tyweK9-f4g.gif");
+            background-position-x: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .right-box {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right-box-b {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right-box-c {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right-box-d {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right-box-e {
+            height: 90%;
+            width: 30%;
+            background-color: rgb(174, 166, 189);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!--main-container-->
+    <div class="main-container">
+        <!--project-title--->
+        <div class="Project-title">
+            <h1> HTML PROJECTS</h1>
+        </div>
+        <!--row-one-->
+        <div class="row-one">
+            <!--left-box-->
+            <div class="left-box">
+                <br>
+                <!--row one-child box-1-->
+                <div class="box-1">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>Account opening form</h1>
+                </div>
+                <br><br><br>
+                <!--box-one-1 button-->
+                <button class="btn-outline"> <a href="../form-exercise.html">hire me</a></button>
+            </div>
+            <!--box-2-->
+            <div class="left-box-2">
+                <br>
+                <div class="box-2">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>HTML FORM</h1>
+                </div>
+                <br><br><br>
+                <button class="btn-outline"> <a href="../home-page.html">hire me</a></button>
+            </div>
+            <!--box-3-->
+            <div class="left-box-3">
+                <div class="box-3">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>Login page</h1>
+                </div>
+                <br><br><br>
+                <button class="btn-outline"> <a href="../forgotpass.html">hire me</a></button>
+            </div>
+        </div>
+        <br>
+        <br><br>
+        <div class="row-two">
+            <div class="left-box-4">
+                <div class="box-4">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>Hospital registration form</h1>
+                    <button class="btn-outline"> <a href="..//practice-form.html">hire me</a></button>
+                </div>
+            </div>
+            <div class="left-box-5">
+                <div class="box-5">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>IMAGE TAGS</h1>
+                    <button class="btn-outline"> <a href="../HTML/projects/exercise-one.html">hire me</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <br><br><br><br>
+    <section class="css-main">
+        <div class="project-heading">
+            <H1>CSS PROJECTS </H1>
+        </div>
+        <br><br>
+        <div class="row-one">
+            <div class="right-box">
+                <div class="box-a">
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>flag</h1>
+                </div>
+                <br>
+
+                <button class="btn-outline"> <a href="../Display-grid/grid-flag.html">hire me</a></button>
+            </div>
+            <br><br><br>
+            <div class="right-box-b">
+                <div class="box-b">
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1> chess</h1>
+                </div>
+                <br>
+
+                <button class="btn-outline"> <a href="../Display-grid/gridchess.html">hire me</a></button>
+
+            </div>
+            <div class="right-box-c">
+                <div class="box-c">
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>calculator</h1>
+                </div>
+                <br>
+
+                <button class="btn-outline"> <a href="../Display-grid/calculator-grid.html">hire me</a></button>
+            </div>
+        </div>
+        <br>
+        <div class="row-two">
+            <div class="right-box-d">
+                <div class="box-d">
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>grid</h1>
+                </div>
+                <br>
+
+                <button class="btn-outline"> <a href="..//Display-grid/grid.html">hire me</a></button>
+            </div>
+            <div class="right-box-e">
+                <div class="box-e">
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>flex</h1>
+                </div>
+                <br>
+
+                <button class="btn-outline"> <a href="../divsion-tag/layout3.html">hire me</a></button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
