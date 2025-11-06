@@ -41,6 +41,7 @@ ul {
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-line-dark-background-image_2344719.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .home-content {
@@ -51,12 +52,17 @@ ul {
     color: rgb(180, 160, 160);
     justify-content: center;
     align-items: center;
+    font-size: 1.5em;
+    line-height: 1.2;
 
 
 }
 
 .home-image {
     justify-content: left;
+    height: auto !important; 
+        max-width: 90%; 
+        margin-top: 20px;
 }
 /* about section start */
 
@@ -81,8 +87,14 @@ ul {
 }
 
 .about-heading {
-    color: rgb(48, 97, 103);
+    color: rgb(92, 179, 180);
 }
+.about-img {
+        height: auto ;
+        width: 80% ;
+        margin: 20px auto;
+        display: block; 
+    }
 
 .left-container {
     height: 100%;
@@ -125,13 +137,15 @@ ul {
             cursor: pointer;
             transition: 0.3s ease;
             font-weight: 600;
-           
+            flex-direction: column;
         }
 
         .btn-outline:hover {
             background: #bd7e97;
             color: #db6565;
             transform: translateY(-3px);
+            width: 80%;
+            margin: 5px auto;
         }
 
 /* project section start */
@@ -156,6 +170,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     border-radius: 20px;
+    
 }
 .box-1{
     height: 100%;
