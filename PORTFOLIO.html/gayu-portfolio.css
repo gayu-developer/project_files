@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+}
+
+/* header css */
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #071012;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    color: white;
+    font-style: oblique;
+    
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 35px;
+    color: white;
+    text-transform:initial;
+    text-decoration: aliceblue;
+
+}
+
+/* home styling */
+.home {
+    height: 800px;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+    
+}
+
+.home-content {
+    height: 30%;
+    width: 50%;
+
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-shadow: #a287aa;
+    line-height: 1.2;
+
+
+}
+
+.home-image {
+    justify-content: left;
+    height: auto ; 
+        max-width: 90%; 
+        margin-top: 20px;
+}
+/* about section start */
+
+
+.about {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    justify-content: left;
+    color: white;
+   
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.about-heading {
+    color: rgb(92, 179, 180);
+}
+.about-img {
+        height: auto ;
+        width: 80% ;
+        margin: 20px auto;
+        display: block; 
+    }
+
+.left-container {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+    background-color: rgba(216, 194, 194, 0.143);
+    color:rgba(255, 255, 255, 0.771)
+    (230, 160, 167);
+    padding: 30px;
+}
+
+.right-container {
+
+    height: 100%;
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset;
+    border-radius: 10px;
+
+
+}
+.down-conatiner{
+    font-size: xx-large;
+    color: rgba(223, 229, 229, 0.753);
+}
+
+.btn-outline {
+            background: transparent;
+            border: 2px solid #cd8fcc;
+            color: #a287aa;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: 600;
+            flex-direction: column;
+        }
+
+        .btn-outline:hover {
+            background: #bd7e97;
+            color: #db6565;
+            transform: translateY(-3px);
+            width: 80%;
+            margin: 5px auto;
+        }
+
+/* project section start */
+.projects{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    
+
+}
+.project-heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size:xx-large;
+}
+.row-one{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    
+}
+.box-1{
+    height: 100%;
+    width: 30%;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("https://verpex.com/assets/uploads/images/blog/Free-HTML-Editors.webp?v=1695388726");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 10px;
+}
+.box-2{
+    height: 100%;
+    width: 30%;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("https://www.motocms.com/blog/wp-content/uploads/2018/07/css-main-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 10px;
+
+}
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+   
+}
+.contact-heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.contact-infor{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: x-large;
+    color:white;
+    text-transform:initial;
+    text-decoration: white;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}

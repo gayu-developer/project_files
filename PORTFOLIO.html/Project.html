@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100%;
+            box-shadow: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+
+
+        .Project-title {
+            height: 7%;
+            width: 100%;
+            background-color: rgba(237, 250, 249, 0.556);
+            padding-top: 10px;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: x-large;
+            margin: 0;
+
+           
+            margin: 0;
+            color: rgb(3, 0, 3);
+        }
+
+        .project-card-wrapper {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4,
+        .box-5 {
+            height: 250px;
+        }
+
+
+        .row-one {
+            height: auto;
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+            gap: 30px;
+            padding: 20 15px;
+
+        }
+
+        .row-two {
+            height: auto;
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+            gap: 30px;
+            padding: 20 15px;
+
+        }
+
+        .project-card-wrapper {
+            height: 90%;
+            width: 30%;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+            padding: 10px;
+            height: auto;
+            overflow: hidden;
+            padding-bottom: 15px;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-content-box {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         
+
+        }
+
+
+
+
+        .box-1 {
+            height: 200px;
+            width: 100%;
+            border-style: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-image: url("https://image.slidesharecdn.com/bankaccountopeningandonlinebanking-170108061237/75/Bank-account-opening-and-online-banking-11-2048.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode:darken;
+           
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(35, 65, 72);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 20px;
+
+
+        }
+
+        .project-content-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+        .box-2 {
+            height: 200px;
+            width: 100%;
+            border-style: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("https://1.bp.blogspot.com/-h095LHE5LDA/X_bRX_U4wSI/AAAAAAAAAHs/zFL1e6o92pYQNrrkLRplq7nwTgH7vm1PwCLcBGAsYHQ/s1280/Responsive%2BRegistration%2BForm%2Bin%2BHTML%2B%2526%2BCSS.webp ");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(35, 65, 72);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 20px;
+
+        }
+
+
+        .box-3 {
+            height: 200px;
+            width: 100%;
+            border-style: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("https://img.freepik.com/free-vector/user-friendly-login-page-screen-template-web-access_1017-58113.jpg?semt=ais_hybrid&w=740&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(35, 65, 72);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 20px;
+
+        }
+
+
+
+
+
+        .box-4 {
+            height: 200px;
+            width: 100%;
+            border-style: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("https://images.sampleforms.com/wp-content/uploads/2024/06/Hospital-Registration-Form.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(35, 65, 72);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 20px;
+        }
+
+
+
+
+        .box-5 {
+            height: 200px;
+            width: 100%;
+            border-style: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("https://i.ytimg.com/vi/L8qGPHC9xUc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjKT3jsNoCxjXteAwABiFLxc86Og");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(35, 65, 72);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 20px;
+        }
+
+        .project-link-wrapper {
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+
+
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #061414;
+            color: #a287aa;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background: #cda4c2;
+            color: #db6565;
+            transform: translateY(-3px);
+        }
+
+
+        .css-main {
+            height: 100vh;
+            width: 100%;
+            box-shadow: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+
+        
+        .project-heading{
+            font-size: x-large;
+            margin: 0;
+            height: 7%;
+            width: 100%;
+            background-color: rgba(237, 250, 249, 0.556);
+            padding-top: 10px;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;  
+            font-size: lem;
+            margin: 0;
+            color: #070108;
+        }
+
+        .project-card-wrapper {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .box-a,
+        .box-b,
+        .box-c,
+        .box-d,
+        .box-e {
+            height: 250px;
+        }
+
+
+
+        .row-1 {
+            height: auto;
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+            gap: 30px;
+            padding: 20px 15px;
+
+        }
+
+        .project-card-wrapper {
+            height: 90%;
+            width: 30%;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+            padding: 10px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding-bottom: 15px;
+        }
+
+        .box-a {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("https://i.pinimg.com/originals/13/3d/ea/133dea82f7398b428f4e4b8afad0fe93.gif");
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 10px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 10px;
+
+        }
+
+        .box-b {
+            height: 99%;
+            width: 99%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-image: url("https://cdn.shopify.com/s/files/1/0630/9543/9612/t/44/assets/afpr%201.gif");
+            background-position-x: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 12px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            color: rgb(35, 65, 72);
+             cursor: pointer;
+            padding: 10px;
+
+
+        }
+
+        .box-c {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("https://www.codewithfaraz.com/img/calculator.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .row-2 {
+            height: auto;
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+            gap: 30px;
+            padding: 20 15px;
+
+        }
+
+        .box-d {
+            height: 99%;
+            width: 99%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("https://www.uibun.dev/blog/posts/tailwindcss-responsive-grid.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .box-e {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*VVbCbFAzl-c3tyweK9-f4g.gif");
+            background-position-x: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 10px;
+        }
+
+
+
+        .project-link-wrapper {
+            text-decoration: none;
+            /* Link underline hatayein */
+            margin-top: 15px;
+        }
+
+
+
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #061414;
+            color: #89b5c4;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background: #cda4c2;
+            color: #4974b0;
+            transform: translateY(-3px);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="Project-title">
+            <h1>HTML PROJECTS</h1>
+        </div>
+
+        <div class="row-one">
+
+            <div class="project-card-wrapper">
+                <div class="box-1 project-content-box">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>Account opening form</h1>
+                </div>
+                <a href="..//form-exercise.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-2 project-content-box">
+                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>HTML FORM</h1>
+                </div>
+                <a href="..//home-page.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-3 project-content-box">
+                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>Login page</h1>
+                </div>
+                <a href="..//forgotpass.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+        </div>
+        <div class="row-two">
+
+            <div class="project-card-wrapper">
+                <div class="box-4 project-content-box">
+                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>Hospital registration form</h1>
+                </div>
+                <a href="..//practice-form.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-5 project-content-box">
+                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1>IMAGE TAGS</h1>
+                </div>
+                <a href="../HTML/projects/exercise-one.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <section class="css-main">
+        <div class="project-heading">
+
+            <H1>CSS PROJECTS</H1>
+        </div>
+
+        <div class="row-1">
+
+            <div class="project-card-wrapper">
+                <div class="box-a project-content-box">
+                    
+                    <h1>flag</h1>
+                </div>
+                <a href="..//Display-grid/grid-flag.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-b project-content-box">
+                    <h1>chess</h1>
+                </div>
+                <a href="..//Display-grid/gridchess.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-c project-content-box">
+                    <h1>calculator</h1>
+                </div>
+                <a href="..//Display-grid/calculator-grid.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+        </div>
+        <div class="row-2">
+
+            <div class="project-card-wrapper">
+                <div class="box-d project-content-box">
+                    <h1>grid</h1>
+                </div>
+                <a href="..//Display-grid/grid.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-e project-content-box">
+                    <h1>flex</h1>
+                </div>
+                <a href="..//divsion-tag/layout3.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Project</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
