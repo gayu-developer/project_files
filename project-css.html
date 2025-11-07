@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<style>
+     body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .css-main {
+            height: 100vh;
+            width: 100%;
+            box-shadow: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+
+        
+        .project-heading{
+            font-size: x-large;
+            margin: 0;
+            height: 7%;
+            width: 100%;
+          background-color: rgba(3, 2, 3, 0.556);
+            padding-top: 10px;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;  
+            font-size: lem;
+            margin: 0;
+            color: rgba(0, 2, 3, 0.633);
+           
+        }
+
+        .project-card-wrapper {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .box-a,
+        .box-b,
+        .box-c,
+        .box-d,
+        .box-e {
+            height: 250px;
+        }
+
+
+
+        .row-1 {
+            height: auto;
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+            gap: 30px;
+            padding: 20px 15px;
+
+        }
+
+        .project-card-wrapper {
+            height: 90%;
+            width: 30%;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+            padding: 10px;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding-bottom: 15px;
+        }
+
+        .box-a {
+            height: 99%;
+            width: 99%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("     https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+            background-position: center;
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 12px;
+
+        }
+
+        .box-b {
+            height: 99%;
+            width: 99%;
+            border-style: solid;
+            box-shadow: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-position-x: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 12px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+            color: rgb(35, 65, 72);
+             cursor: pointer;
+            padding: 10px;
+
+
+        }
+
+        .box-c {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .row-2 {
+            height: auto;
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 10px;
+            gap: 30px;
+            padding: 20 15px;
+
+        }
+
+        .box-d {
+            height: 99%;
+            width: 99%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .box-e {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20221022/pngtree-css-tiled-letters-concept-and-theme-symbol-html-illustration-photo-image_23067644.jpg");
+            background-position-x: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 10px;
+            box-shadow: 4px 4px 4px;
+            box-sizing: border-box;
+            align-items: center;
+            border-radius: 12px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0, 3);
+ color: rgb(35, 65, 72);
+            cursor: pointer;
+            padding: 10px;
+           
+        }
+
+
+
+        .project-link-wrapper {
+            text-decoration: none;
+            
+            margin-top: 15px;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #061414;
+            color: #89b5c4;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background: #110f10;
+            color: #b1bfd3;
+            transform: translateY(-3px);
+        }
+
+
+
+
+</style>
+<body>
+    <section class="css-main">
+        <div class="project-heading">
+
+            <H1>CSS PROJECTS</H1>
+            <a href="./Project.html"><button>HTML</button></a>
+           <a href="./project-css.html"><button>CSS</button></a>
+              <a href="./project-js.html"><button>JAVASCRIPT</button></a>
+              <a href="./index.html"><button>Back to home</button></a>
+             
+            
+        </div>
+
+        <div class="row-1">
+
+            <div class="project-card-wrapper">
+                <div class="box-a project-content-box">
+                    
+                   
+                </div>
+                <a href="./Display-grid/grid-flag.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Flag</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-b project-content-box">
+                 
+                </div>
+                <a href="./Display-grid/gridchess.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Chess</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-c project-content-box">
+                   
+                </div>
+                <a href="./Display-grid/calculator-grid.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Calculator</button>
+                </a>
+            </div>
+        </div>
+        <div class="row-2">
+
+            <div class="project-card-wrapper">
+                <div class="box-d project-content-box">
+                    
+                </div>
+                <a href="./Display-grid/grid.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Grid Box</button>
+                </a>
+            </div>
+
+            <div class="project-card-wrapper">
+                <div class="box-e project-content-box">
+                    
+                </div>
+                <a href="./divsion-tag/layout3.html" class="project-link-wrapper">
+                    <button class="btn-outline">View Flex Box</button>
+                </a>
+            </div>
+ 
+        </div>
+    </section>
+</body>
+</html>
