@@ -34,13 +34,11 @@ ul {
 .home {
     height: 800px;
     width: 100%;
-    background-color: #e4bfe8;
+    background-color:black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-line-dark-background-image_2344719.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     
 }
 
@@ -49,10 +47,11 @@ ul {
     width: 50%;
 
     padding: 10px;
-    color: rgb(180, 160, 160);
+    color: white;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: large;
+    text-shadow: #a287aa;
     line-height: 1.2;
 
 
@@ -60,7 +59,7 @@ ul {
 
 .home-image {
     justify-content: left;
-    height: auto !important; 
+    height: auto ; 
         max-width: 90%; 
         margin-top: 20px;
 }
@@ -70,14 +69,14 @@ ul {
 .about {
     height: 100vh;
     width: 100%;
-    background-color: #d7a6c2;
+    background-color: black;
     display: flex;
     flex-direction: column;
     font-size: xx-large;
     justify-content: left;
-    background-image: url("https://dkemhji6i1k0x.cloudfront.net/000_clients/1173818/page/1173818EvT0ftuv.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: whitesmoke;
+    
+   
 }
 
 .about-content {
@@ -104,7 +103,7 @@ ul {
     justify-content: center;
     align-items: center;
     font-size:x-large;
-    background-color: rgba(216, 194, 194, 0.143);
+    
     color:rgba(255, 255, 255, 0.771)
     (230, 160, 167);
     padding: 30px;
@@ -148,17 +147,15 @@ ul {
             margin: 5px auto;
         }
 
-/* project section start */
-.projects{
+/* skill section start */
+.skill{
     height: 80vh;
     width: 100%;
-    background-color: rgb(17, 36, 49);
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoFyJCcnOjeDZcQ8_v0fbN-opI6O7IP3H_5g&s");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    
 
 }
-.project-heading{
+.skill-heading{
     display: flex;
     justify-content: center;
     color: white;
@@ -197,31 +194,73 @@ ul {
     gap: 10px;
 
 }
-
-.contact{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(19, 16, 18);
-    background-image: url("");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.contact-heading{
+.box-3{
+    height: 100%;
+    width: 30%;
+    border-style: solid;
     display: flex;
-    justify-content: center;
-    color: beige;
-    font-size: xx-large;
-}
-
-.contact-infor{
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    font-size: x-large;
-    color: rgb(149, 122, 122);
-    text-transform:initial;
-    text-decoration: rgb(59, 61, 63);
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-around;
+    background-image: url("https://wallpapers.com/images/featured/javascript-pnr9lrhwaigq76mb.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+    gap: 10px;
 }
+.contact {
+    padding: 80px 5%; 
+    text-align: center;
+    background-color: #080303; 
+}
+
+.contact-heading h1 {
+    font-size: 2.5rem;
+    color: #dacdcd;
+    margin-bottom: 40px;
+}
+
+
+.contact-infor {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #110f0f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+    
+}
+
+
+.contact-detail {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 10px;
+}
+
+.contact-detail:last-child {
+    border-bottom: none; 
+}
+
+.contact-detail h3 {
+    font-size: 1.1rem;
+    color: #a2b8c6;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.contact-detail p,
+.contact-detail a {
+    font-size: 1rem;
+    color: #a16d6d;
+    margin: 0;
+    text-decoration: none;
+}
+
+.contact-detail a:hover {
+    text-decoration: underline;
+    color: #183c61;
+}
+
+  
+
+
