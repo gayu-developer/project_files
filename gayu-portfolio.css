@@ -34,11 +34,13 @@ ul {
 .home {
     height: 800px;
     width: 100%;
-    background-color:black;
+    background-color: #e4bfe8;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-   
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-line-dark-background-image_2344719.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -47,11 +49,10 @@ ul {
     width: 50%;
 
     padding: 10px;
-    color: white;
+    color: rgb(180, 160, 160);
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    text-shadow: #a287aa;
     line-height: 1.2;
 
 
@@ -59,7 +60,7 @@ ul {
 
 .home-image {
     justify-content: left;
-    height: auto ; 
+    height: auto !important; 
         max-width: 90%; 
         margin-top: 20px;
 }
@@ -69,13 +70,14 @@ ul {
 .about {
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: #d7a6c2;
     display: flex;
     flex-direction: column;
     font-size: xx-large;
     justify-content: left;
-    color: white;
-   
+    background-image: url("https://dkemhji6i1k0x.cloudfront.net/000_clients/1173818/page/1173818EvT0ftuv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-content {
@@ -150,8 +152,10 @@ ul {
 .projects{
     height: 80vh;
     width: 100%;
-    background-color: black;
-    
+    background-color: rgb(17, 36, 49);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoFyJCcnOjeDZcQ8_v0fbN-opI6O7IP3H_5g&s");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .project-heading{
@@ -197,13 +201,15 @@ ul {
 .contact{
     height: 100vh;
     width: 100%;
-    background-color: black;
-   
+    background-color: rgb(19, 16, 18);
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .contact-heading{
     display: flex;
     justify-content: center;
-    color: white;
+    color: beige;
     font-size: xx-large;
 }
 
@@ -212,9 +218,9 @@ ul {
     gap: 30px;
     list-style: none;
     font-size: x-large;
-    color:white;
+    color: rgb(149, 122, 122);
     text-transform:initial;
-    text-decoration: white;
+    text-decoration: rgb(59, 61, 63);
     flex-direction: column;
     justify-items: center;
     align-items: center;
