@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            height: 80vh;
+            width: 80vh;
+
+
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .container {
+            height: 70%;
+            width: 70%;
+            background-color: cadetblue;
+            justify-content: space-around;
+            align-items: center;
+            background-color: darkcyan;
+            border-radius: 10PX;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .display-area {
+            height: 80%;
+            width: 80%;
+            align-items: center;
+            font-size: xx-large;
+            border-radius: 10PX;
+            background-color: rgb(201, 186, 129);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .button {
+            height: 15%;
+            width: 10%;
+            background-color: rgb(198, 146, 198);
+            display: flex;
+        }
+
+        .click-button {
+            height: 50%;
+            width: 30%;
+            background-color: rgb(236, 213, 213);
+           
+        }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="display-area" id=display></div>
+            <div class="input-area">
+                <input type="text" class="input-field" id="input-one" placeholder="Give an input">
+                <button class="click-button" onclick="dispalyoutput()">click</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // fuction is block code which preperforming specific block
+    function displayoutput() {
+        // input
+        let x = document.getElementById("input-one").value;
+        // process
+        let y = document.getElementById("display").innerHTML = y;
+        // output
+        document.getElementById
+        console.log()
+
+    }
+</script>
+
+</html>

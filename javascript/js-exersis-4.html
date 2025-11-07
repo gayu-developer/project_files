@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /*decleration*/
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+
+        /*tag selector*/
+        .main-container {
+            height: 600px;
+            width: 700px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        .display-area {
+            height: 70%;
+            width: 90%;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        .input-area {
+            height: 20%;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            border-color: black;
+        }
+
+        .input {
+            height: 50%;
+            width: 30%;
+            background-color: lightgoldenrodyellow;
+            border-radius: 10px;
+            gap: 10px;
+            margin-left: 10px;
+        }
+
+        .click-button {
+            height: 10%;
+            width: 80%;
+            border-radius: 10px;
+            background-color: orangered;
+            margin-left: 40px;
+            display: flex;
+            
+
+        }
+
+        .click-button:hover {
+            background-color: orange;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display-area">
+            <div>
+                <h1 id="display"></h1>
+            </div>
+        </div>
+        <di class="input-area">
+            <input type="number" class="input" id="input" placeholder="enter your input....">
+            <input type="number" class="input" id="input2" placeholder="enter your input....">
+            <input type="number" class="input" id="input3" placeholder=" enter your input....">
+            <input type="number" class="input" id="input4" placeholder="enter your input.....">
+            <br>
+            <button class="clicl-button" onclick="displayoutput()">click</button>
+    </div>
+
+    </div>
+    <script>
+        function displayoutput() {
+            let num1 = Number(document.getElementById("input").value);
+            let num2 = Number(document.getElementById("input2").value);
+            let num3 = Number(document.getElementById("input3").value);
+            let num4 = Number(document.getElementById ("input4").value);
+
+            let sum = num1 + num2 + num3 + num4
+            let avg = sum / 4;
+            document.getElementById("display").innerHTML = "the average of="+avg;
+            
+        }
+    </script>
+
+
+</body>
+
+</html>

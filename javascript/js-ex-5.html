@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="text"></h1>
+    <input type="text" id="input"><br>
+    <button onclick="secondfunction()">submit</button>
+
+    <script>
+        function myfunction() {
+            // input using prompt
+            let str = prompt("Enter a string");
+            // output
+            document.getElementById("text").innerHTML = str;
+           
+            alert(str);
+            console.log(str);
+        }
+
+        function secondfunction() {
+            // input using prompt
+            let number1 = prompt("Enter a number ");
+            // input using HTML
+            let number2 = document.getElementById("input").value;
+            // process
+            let c = Number(number2) * Number(number1);
+            // output on HTML
+            document.getElementById("text").innerHTML = c;
+            alert(c);
+            console.log(c);
+
+            document.getElementById("container").style.backgroundColor = "lightcoral";
+           
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    /* declaration */
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        background-color:rgb(10, 9, 9);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
+    }
+    /* tag selectors */
+    .container{
+        height: 80%;
+        width: 50%;
+        background-color: rgb(211, 217, 189);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+    }
+    .display-area{
+        height:70% ;
+        width: 80%;
+        border-radius: 20px;
+        background-color:rgb(156, 161, 133);
+        padding: 20px;
+       
+    }
+    .button-group{
+         height:50% ;
+        width: 80%;
+        border-radius: 20px;
+        background-color:rgb(163, 211, 211);
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    button{
+        width: 100px;
+        height: 80px;
+        border-radius: 10px;
+        gap: 10px;
+    }
+    p{
+        font-size: 30px;
+        color: rgb(1, 2, 3);
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display-area">
+            <p id="display"></p>
+        </div>
+        <div class="buton-group">
+            <button onclick="clickOne()">1</button>
+             <button onclick="clickTwo()">2</button>
+              <button onclick="clickThree()">3</button>
+               <button onclick="clickFour()">4</button>
+        </div>
+    </div>
+
+    <script>
+        function clickOne(){
+            
+            document.getElementById("display").innerHTML += 1;
+        }
+         function clickTwo(){
+            
+            document.getElementById("display").innerHTML += 2;
+         }
+          function clickThree(){
+           
+            document.getElementById("display").innerHTML += 3;
+          }
+           function clickFour(){
+           
+            document.getElementById("display").innerHTML += 4;
+           }
+    </script>
+</body>
+</html>
