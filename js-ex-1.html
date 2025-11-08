@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .display-area{
+            height: 40%;
+            width: 100%;
+            background-color: rgb(176, 145, 178);
+        }
+        
+
+.input-area {
+    height: 60%;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+    
+
+button {
+    height: 15%;
+    width: 15%;
+    background-color:"#C9B59C";
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-top: 90px;
+    font-size: 60px;
+    
+     font-family: "Changa One", sans-serif;
+  font-weight: 400;
+    font-style: normal;
+}
+</style>
+
+<title>js-exercise1</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">  </style>
+   
+    <title>Document</title>
+       
+</head>
+<body>
+   <div class="main-container">
+    <div class="display-area" id="container-one">
+        <p>welcome to universal calender</p>
+        <h1 id="weekdays"></h1>
+    </div>
+    <div class="input-area" id=" container-two">
+        <button class="click-button" id="monday" onclick="monday()"><h1>monday</h1></button>
+         <button class="click-button" id="tuesday" onclick="tuesday()"><h1>tuesday</h1></button>
+          <button class="click-button" id="wednesday" onclick="wednesday()"><h1>wednesday</h1></button>
+           <button class="click-button" id="thursday" onclick="thursday()"><h1>thursday</h1></button>
+            <button class="click-button" id="friday" onclick="friday()"><h1>friday</h1></button>
+             <button class="click-button" id="saturday" onclick="saturday()"><h1>saturday</h1></button>
+              <button class="click-button" id="sunday" onclick="sunday()"><h1>sunday</h1></button>
+        
+
+    </div>
+   </div>
+   <script>
+    function monday(){
+        document.getElementById("container-one").style.backgroundcolor = "blue";
+         document.getElementById("container-two").style.backgroundcolor = "green";
+          document.getElementById("monday").style.backgroundcolor = "yellow";
+           
+           document.getElementById("weekdays").innerHTML = "Today is monday";
+        
+    }
+    function tuesday() {
+    document.getElementById("container-one").style.backgroundColor = "red";
+    document.getElementById("container-two").style.backgroundColor = "yellow";
+    document.getElementById("tuesday").style.backgroundColor = "orange";
+    document.getElementById("weekdays").innerHTML = "Today is a Tuesday!";
+}
+
+function wednesday() {
+    document.getElementById("container-one").style.backgroundColor = "#91ADC8";
+    document.getElementById("container-two").style.backgroundColor = "#FFBFB0";
+    document.getElementById("wednesday").style.backgroundColor = "#BBC863";
+    document.getElementById("weekdays").innerHTML = "Today is a Wednesday!";
+}
+
+function thursday() {
+    document.getElementById("container-one").style.backgroundColor = "#C66E52";
+    document.getElementById("container-two").style.backgroundColor = "#E06B80";
+    document.getElementById("thursday").style.backgroundColor = "#91C4C3";
+    document.getElementById("weekdays").innerHTML = "Today is a Thursday!";
+}
+
+function friday() {
+    document.getElementById("container-one").style.backgroundColor = "#F08787";
+    document.getElementById("container-two").style.backgroundColor = "#8FA31E";
+    document.getElementById("friday").style.backgroundColor = "#715A5A";
+    document.getElementById("weekdays").innerHTML = "Today is a Friday!";
+}
+
+function saturday() {
+    document.getElementById("container-one").style.backgroundColor = "#BBDCE5";
+    document.getElementById("container-two").style.backgroundColor = "#F5C9B0";
+    document.getElementById("saturday").style.backgroundColor = "green";
+    document.getElementById("weekdays").innerHTML = "Today is a Saturday!";
+}
+
+function sunday() {
+    document.getElementById("container-one").style.backgroundColor = "#842A3B";
+    document.getElementById("container-two").style.backgroundColor = "gray";
+    document.getElementById("sunday").style.backgroundColor = "aqua";
+    document.getElementById("weekdays").innerHTML = "Today is a Sunday!";
+}
+
+   </script>
+</body>
+</html>

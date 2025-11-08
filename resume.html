@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #f7f9fc;
+        }
+
+        .main-container {
+            height: 1100px;
+            width: 100vw;
+            background-color: #e8eaee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-container {
+            height: 100%;
+            width: 25%;
+            background-color: #787b7f; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 25px;
+            box-shadow: 3px 0 15px rgba(73, 161, 193, 0.2);
+        }
+
+        .right-container {
+            height: 100%;
+            width: 35%;
+            background-color: #787b7f; 
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: start;
+            flex-direction: column;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+    height: 290px;      
+    width: 290px;        
+    border-radius: 50%;  
+    border: 3px solid #58636a; 
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    object-fit: cover;   
+   justify-content: center;
+   align-items: center;
+}
+
+
+        h1 {
+            color: #0b3d4f;
+            font-size: 24px;
+            margin: 5px 0;
+        }
+
+        h3 {
+            color: rgba(1, 6, 8, 0.8);
+            margin: 5px 0;
+        }
+
+        .myfirst-heading {
+            color: #020d17;
+            margin-left: 10px;
+            border-bottom: 3px solid #060708;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #1E3A5F;
+        }
+
+        ul h4 {
+            color: #02060a;
+            margin: 3px 0;
+        }
+
+        ul p {
+            margin-left: 20px;
+            color: #0a0404;
+            line-height: 1.5;
+        }
+
+        li:hover {
+            color: #070a0b;
+            transition: 0.3s ease;
+        }
+
+        p i {
+            color: #092e3c;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayatri Godbole - Portfolio</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img src="./gadbail.jpeg" id="profileImage" alt="" height="50%" width="100%">
+            
+
+            <h1><b id="name"></b></h1>
+            <h3 id="courceName"></h3> <br>
+            <h1 id="title"></h1>
+            <h3 id="phoneNo"></h3>
+            <h3 id="email"></h3>
+            <h3 id="mylocation"></h3>
+            <br>
+            <h1 id="secondTitle"></h1>
+            <h3 id="myfirstskill"></h3>
+            <h3 id="mysecondskill"></h3>
+            <h3 id="mythirdskill"></h3>
+            <br>
+            <h1 id="thirdTitle"></h1>
+            <h3 id="english"></h3>
+            <h3 id="hindi"></h3>
+            <h3 id="marathi"></h3>
+        </div>
+
+        <div class="right-container">
+            <h1><b class="myfirst-heading" id="education"></b></h1>
+            <ul>
+                <li id="batch"></li>
+                <h4>B.Tech in Artificial Intelligence (2nd Year)</h4>
+                <p><i>GNIET College, Nagpur</i></p>
+                <p>Currently pursuing a Bachelor’s degree in Artificial Intelligence with a deep interest in problem-solving, data structures, and smart automation. Passionate about building intelligent solutions through innovation and teamwork.</p>
+
+                <li id="present"></li>
+                <h4>Full Stack Web Development</h4>
+                <p><i>Self Learning & Hands-on Practice</i></p>
+                <p id="enjoyp"></p>
+                <p>Developing responsive and creative websites using HTML, CSS, and JavaScript. Constantly exploring modern UI design principles and improving performance through clean and optimized code.</p>
+
+                <li id="student"></li>
+                <h4>AI Engineering + Web Development</h4>
+                <p>Blending Artificial Intelligence concepts with front-end development to create smart, user-friendly, and efficient applications for real-world problems.</p>
+
+                <br>
+                <h1><b class="myfirst-heading" id="project"></b></h1>
+
+                <li id="portfolio"></li>
+                <p>Designed and developed a personal portfolio website that highlights technical skills and projects with a professional layout and elegant UI.</p>
+                <li>Weather Forecast Web App</li>
+                <p>Built a simple weather prediction web app using real-time API integration to fetch data dynamically and display weather updates.</p>
+
+                <br>
+                <h1><b id="interest" class="myfirst-heading"></b></h1>
+                <p>Passionate about designing creative web interfaces, learning new technologies, and exploring the connection between AI and web development. I love working on new ideas that combine design and logic.</p>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let profileImage = "./gadbail.jpeg"; 
+        let name = "Gayatri Godbole";
+        let courceName = "AI Engineering | Full Stack Developer";
+        let title = "Contact";
+        let phoneNo = "3.8767886522";
+        let email = "godbolegayu184@gmail.com";
+        let mylocation = "Mouda, Dist. Nagpur, Maharashtra";
+        let secondTitle = "Skills";
+        let myfirstskill = "HTML";
+        let mysecondskill = "CSS";
+        let mythirdskill = "JavaScript";
+        let thirdTitle = "Languages ";
+        let english = "English";
+        let hindi = "Hindi";
+        let marathi = "Marathi";
+        let education = "Education";
+        let batch = "2024 - 2028";
+        let present = "2025";
+        let enjoyp = "Core Technologies: HTML | CSS | JavaScript";
+        let student = "2025";
+        let project = "Projects";
+        let portfolio = "Personal Portfolio Website";
+        let interest = "My Interests";
+
+        document.getElementById("profileImage").src = profileImage;
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("courceName").innerHTML = courceName;
+        document.getElementById("title").innerHTML = title;
+        document.getElementById("phoneNo").innerHTML = phoneNo;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("mylocation").innerHTML = mylocation;
+        document.getElementById("secondTitle").innerHTML = secondTitle;
+        document.getElementById("myfirstskill").innerHTML = myfirstskill;
+        document.getElementById("mysecondskill").innerHTML = mysecondskill;
+        document.getElementById("mythirdskill").innerHTML = mythirdskill;
+        document.getElementById("thirdTitle").innerHTML = thirdTitle;
+        document.getElementById("english").innerHTML = english;
+        document.getElementById("hindi").innerHTML = hindi;
+        document.getElementById("marathi").innerHTML = marathi;
+        document.getElementById("education").innerHTML = education;
+        document.getElementById("batch").innerHTML = batch;
+        document.getElementById("present").innerHTML = present;
+        document.getElementById("enjoyp").innerHTML = enjoyp;
+        document.getElementById("student").innerHTML = student;
+        document.getElementById("project").innerHTML = project;
+        document.getElementById("portfolio").innerHTML = portfolio;
+        document.getElementById("interest").innerHTML = interest;
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+.main-container {
+    height: 70%;
+    width: 30%;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+
+.bulb-image {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    
+}
+
+
+.img {
+    height: 30%;
+    width: 50%;
+    
+}
+
+.button-group {
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-group {
+    height: 30%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    height: 20%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    border-color: gray;
+    border-style: solid;
+    background-color: lightslategray;
+}
+
+.clickbutton {
+    background-color: azure;
+}
+
+.clickbutton:hover {
+    background-color: rgba(1, 10, 15, 0.809);
+}
+</style>
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <div class="main-container">
+    <div class="bulb-image">
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" id="image" alt="Bulb"> 
+    </div>
+    <div class="button-group">
+        <button class="clickbutton" onclick="redBulb()">Red Bulb</button>
+        <button class="clickbutton" onclick="greenBulb()">Green Bulb</button>
+        <button class="clickbutton" onclick="blueBulb()">Blue Bulb</button>
+    </div>
+</div>
+<script>
+function redBulb() {
+    
+    document.getElementById("image").src = "https://m.media-amazon.com/images/I/41TlwJg6LOS.jpg"; 
+}
+
+function greenBulb() {
+    
+    document.getElementById("image").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0UQ1ig4zxH2gMfEW4vhF4yAM9yvVvFYGjYw&s"; 
+}
+
+function blueBulb() {
+    
+    document.getElementById("image").src = "https://services.ibo.com/media/v1/products/images/daa29b2b-fc6e-450f-bb80-5c6a5da0ef40/panasonic-tiny-05-w-b22-blue-led-night-bulb-1.jpeg"; 
+}
+</script>
+</body>
+</html>

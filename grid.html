@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-container{
+            width: 600PX;
+            height: 800PX;
+            display: grid;
+            
+        grid-template-columns: repeat(8 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+            background-color: rgb(220, 169, 205);
+            
+
+        }
+        .box{
+            background-color: rgb(51, 108, 108);
+            text-align: center;
+            border-style: double;
+            border-width: 2px;
+            border-color: black;
+            align-items: center;
+            display:flex ;
+            justify-content: center;
+        }
+        .Big-box{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .Big-row{
+            grid-column: 2 /  span 4 ;
+        }
+        .box-three{
+        grid-column: 1/ span 2;
+        }
+        .box-five{
+            grid-column: 2/ span 3;
+        }
+        .box-eight{
+            grid-column: 2/ span 2;
+        }
+    </style>
+    
+    <title>GRID</title>
+</head>
+
+
+<body>
+    <!-- main conatiner -->
+<div class="main-container">
+    <div class="box Big-box" >1</div>
+    <div class="box Big-row">2</div>
+    <div class="box box-three">3</div>
+    <div class="box">4</div>
+    <div class="box box-five">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box box-eight">8</div>
+    <div class="box">9</div>
+   <div class="box">10</div>
+</div>
+</body>
+</html>
