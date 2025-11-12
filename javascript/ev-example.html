@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            width: 100vh;
+            height: 100vh;
+            margin: 0%;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .container {
+            width: 70%;
+            height: 50%;
+            background-color: rgb(56, 88, 88);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .display-area {
+            width: 90%;
+            height: 30%;
+            background-color: rgb(186, 144, 148);
+        }
+
+        .input-area {
+            width: 90%;
+            height: 20%;
+            background-color: rgb(106, 188, 173);
+        }
+
+        .button-area {
+            width: 90%;
+            height: 20%;
+            background-color: rgb(230, 220, 208);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="display-area"></div>
+
+        <div class="input-area">
+            <input type="number" id="input-one" placeholder="input-one">
+            <input type="number" id="input-two" placeholder="input-two">
+        </div>
+        <div class="button-area">
+            <button onclick="functionone()">red</button>
+            <button onclick="functiontwo()">yellow</button>
+        </div>
+
+    </div>
+    <script>
+        function functionone() {
+
+            let a = document.getElementById("input-one").value;
+            console.log(a)
+
+        }
+        let b = 0
+        function functiontwo() {
+            let a = document.getElementById("input-two").value;
+            
+            b= b+ Number(a)
+            console.log(b)
+        }
+    </script>
+
+    </div>
+</body>
+
+</html>

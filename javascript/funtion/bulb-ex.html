@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box{
+            width: 20%;
+            height:  45%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px 2px 2px;
+            border-radius: 10px;
+        }
+
+        .button{
+            width: 20%;
+            height: 5%;
+            background-color: rgba(255, 255, 255, 0);
+            text-align: center;
+            box-shadow: 2px 2px 20px 5px;
+        }
+
+        img{
+            border-radius: 10px;
+        }
+
+        button{
+            width: 90px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <img src="" alt="" id="image" width="100%" height="100%">
+            
+        </div>
+        <div class="button">
+            <button onclick="redbulb()">Red</button>
+            <button onclick="greenbulb()">Yello</button>
+            <button onclick="bluebulb()">Blue</button>
+        </div>
+    </div>
+</body>
+<script>
+    function redbulb(){
+        document.getElementById("image").src = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRl3FUNtmBUkfB4hEH7paqEZ_RLKK1H5aLiHdLicSUKerwKGMtJvSB8SxvDH_gD5EC6OFP8V5KxAf46Hj-3MA1Lwgl_U4zNhInBQuulDs5AO3lN0DJSetKy";
+
+    }
+
+    function greenbulb(){
+        document.getElementById("image").src = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSJEtVNvuk-o6Nk8QeVdy6MPoPqS_6V0MdCql1sYFNxf1vPNDJW_M4C0Nks2OqfpV2Af2_VAenJShtGURakjFPL_hJ1KUjvqJ8Lbe6JXBdOZMaACyDKmjceUQ";
+    }
+
+    function bluebulb(){
+        document.getElementById("image").src = "https://m.media-amazon.com/images/I/51L4WrtDKaL.jpg";
+    }
+</script>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /*/declaration  */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* tag selectors */
+        .main-atmbox {
+            height: 90vh;
+            width: 50vw;
+            display: flex;
+            background-color: rgb(80, 198, 230);
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            gap: 15px;
+        }
+
+        .atmbox {
+            height: 70%;
+            width: 50%;
+            display: flex;
+            background-color: whitesmoke;
+            border-radius: 9px;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+
+        }
+
+        .display {
+            height: 25%;
+            width: 85%;
+            background-color: rgb(219, 225, 230);
+             border-radius: 9px;
+            text-align: center;
+            gap: 9px;
+            margin-bottom: 30px;
+            border-color: rgb(160, 160, 224);
+        }
+
+        p {
+            font-size: 28px;
+        }
+
+
+        input {
+            height: 10%;
+            width: 90%;
+            background-color: rgb(181, 190, 194);
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        button {
+            height: 10%;
+            width: 90%;
+            background-color: rgb(52, 187, 224);
+            border-radius: 10px;
+            color: rgb(211, 228, 230);
+            font-size: 18px;
+        }
+
+        .checkoutput {
+            width: 90%;
+            height: 10%;
+            background-color: rgb(157, 189, 162);
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            color: white;
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-atmbox">
+        <div class="atmbox">
+            <h1 class="heading">ATM Withdrawal</h1>
+            <div class="display">
+                <p>current balance</p>
+                <p id="total-balance"></p>
+                <p id="display-one"></p>
+                <p id="display-two"></p>
+
+            </div>
+            <input type="number" id="amounts" placeholder="Enter amount to Withdraw...">
+            <button onclick="checkbalance()">Withdraw</button>
+            <button class="checkoutput" id="checkoutput">Withdrawal successful</button>
+
+        </div>
+    </div>
+</body>
+<!-- script  -->
+<script>
+    let balance = 9500;
+    let withdrawAmount = 0;
+    document.getElementById("total-balance").innerHTML = balance;
+
+    function checkbalance() {
+        withdrawAmount = document.getElementById("amounts").value;
+        balance = balance - withdrawAmount;
+
+        document.getElementById("total-balance").innerHTML = balance;
+        document.getElementById("checkoutput").style.display = "block";
+    }
+
+</script>
+
+</html>
