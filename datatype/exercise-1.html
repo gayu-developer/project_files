@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculater-container {
+            height: 60vh;
+            width: 60vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(166, 203, 229);
+        }
+
+        .container {
+            height: 30%;
+            width: 80%;
+            display: flex;
+            background-color: rgb(139, 174, 192);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: start;
+
+        }
+
+        .input {
+            height: 30%;
+            width: 80%;
+            background-color: rgb(161, 210, 221);
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px gray;
+
+        }
+
+        .button {
+            height: 40%;
+            width: 100%;
+            background-color: chartreuse;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .output {
+            height: 80%;
+            width: 70%;
+            border-radius: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl> exercise-1</titl>
+</head>
+
+<body>
+    <div class="calculater-container">
+        <h1>Calculate Two Variable</h1>
+        <div class="container">
+            <label>First Number</label>
+            <input type="nuber" id="input-one">
+            <br>
+            <label> Second Number</label>
+            <input type="number" id="input-two">
+            <br>
+            <button onclick="calculatesum()">calculatesum</button>
+            <p id="output"></p>
+        </div>
+    </div>
+
+
+    <script>
+        function calculatesum() {
+            //input
+            let num1 = document.getElementById("input-one").value;
+            let num2 = document.getElementById("input-two").value;
+            //process
+            let sum = Number(num1) + Number(num2)
+            //output
+            document.getElementById("output").innerHTML = "sum is:" +  sum
+        }
+
+    </script>
+
+</body>
+
+</html>
