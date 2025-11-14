@@ -1,317 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <title>Document</title>
 </head>
 <style>
-     body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .javascript-main {
-            height: 100vh;
-            width: 100%;
-            box-shadow: 10px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-            padding: 20px 0;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-
-        
-        .project-heading{
-            font-size: x-large;
-            margin: 0;
-            height: 7%;
-            width: 100%;
-            color: rgba(0, 2, 3, 0.633);
-             background-color: rgba(3, 2, 3, 0.556);
-            padding-top: 10px;
-            gap: 30px;
-            justify-content: center;
-            align-items: center;
-            display: flex;  
-            font-size: lem;
-            margin: 0;
-            
-        }
-
-        .project-card-wrapper {
-            width: 90%;
-            height: auto;
-            margin: 0 auto;
-        }
-        .box-a,
-        .box-b,
-        .box-c,
-        .box-d,
-        .box-e {
-            height: 250px;
-        }
+    .javascript-main {
+        height: 100vh;
+        width: 100%;
+        box-shadow: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+    }
 
 
 
-        .card-1 {
-            height: auto;
-            min-height: 40vh;
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            border-radius: 20px;
-            box-shadow: 10px;
-            gap: 30px;
-            padding: 20px 15px;
+    .project-heading {
+        font-size: x-large;
+        margin: 0;
+        height: 7%;
+        width: 100%;
+        color: rgba(0, 2, 3, 0.633);
+        background-color: rgba(3, 2, 3, 0.556);
+        padding-top: 10px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: lem;
+        margin: 0;
 
-        }
+    }
 
-        .project-card-wrapper {
-            height: 90%;
-            width: 30%;
-            background-color: transparent;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            border-radius: 12px;
-            padding: 10px;
-            height: auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            padding-bottom: 15px;
-        }
+    .project-card-wrapper {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
 
-        .box-a {
-            height: 99%;
-            width: 100%;
-            border-style: solid;
-            box-shadow: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
-            gap: 10px;
-            background-position: center;
-            box-shadow: 4px 4px 4px;
-            box-sizing: border-box;
-            align-items: center;
-            border-radius: 10px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0, 3);
- color: rgb(35, 65, 72);
-            cursor: pointer;
-            padding: 10px;
-
-        }
-
-        .box-b {
-            height: 99%;
-            width: 99%;
-            border-style: solid;
-            box-shadow: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
-            background-position-x: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            gap: 12px;
-            box-shadow: 4px 4px 4px;
-            box-sizing: border-box;
-            align-items: center;
-            border-radius: 12px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0, 3);
-
-            color: rgb(35, 65, 72);
-             cursor: pointer;
-            padding: 10px;
-
-
-        }
-
-        .box-c {
-            height: 100%;
-            width: 100%;
-            border-style: solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            gap: 10px;
-            box-shadow: 4px 4px 4px;
-            box-sizing: border-box;
-            align-items: center;
-            border-radius: 12px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0, 3);
-
- color: rgb(35, 65, 72);
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .card-2 {
-            height: auto;
-            min-height: 40vh;
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            border-radius: 20px;
-            box-shadow: 10px;
-            gap: 30px;
-            padding: 20 15px;
-
-        }
-
-        .box-d {
-            height: 99%;
-            width: 99%;
-            border-style: solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            gap: 10px;
-            box-shadow: 4px 4px 4px;
-            box-sizing: border-box;
-            align-items: center;
-            border-radius: 12px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0, 3);
- color: rgb(35, 65, 72);
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .box-e {
-            height: 100%;
-            width: 100%;
-            border-style: solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
-            background-position-x: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            gap: 10px;
-            box-shadow: 4px 4px 4px;
-            box-sizing: border-box;
-            align-items: center;
-            border-radius: 12px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0, 3);
- color:black(35, 65, 72);
-            cursor: pointer;
-            padding: 10px;
-           
-        }
-        .box-f {
-            height: 100%;
-            width: 100%;
-            border-style: solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
-            background-position-x: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            gap: 10px;
-            box-shadow: 4px 4px 4px;
-            box-sizing: border-box;
-            align-items: center;
-            border-radius: 12px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0, 3);
- color:black(35, 65, 72);
-            cursor: pointer;
-            padding: 10px;
-           
-        }
-        .box-G {
-            height: 100%;
-            width: 100%;
-            border-style: solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
-            background-position-x: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            gap: 10px;
-            box-shadow: 4px 4px 4px;
-            box-sizing: border-box;
-            align-items: center;
-            border-radius: 12px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0, 3);
- color:black(35, 65, 72);
-            cursor: pointer;
-            padding: 10px;
-           
-        }
-        .project-link-wrapper {
-            text-decoration: none;
-            
-            margin-top: 15px;
-        }
-        .btn-outline {
-            background: transparent;
-            border: 2px solid #061414;
-            color: #89b5c4;
-            padding: 8px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s ease;
-            font-weight: 600;
-        }
-
-        .btn-outline:hover {
-            background: #110f10;
-            color: #b1bfd3;
-            transform: translateY(-3px);
-        }
+    .box-a,
+    .box-b,
+    .box-c,
+    .box-d,
+    .box-e {
+        height: 250px;
+    }
 
 
 
+    .card-1 {
+        height: auto;
+        min-height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        box-shadow: 10px;
+        gap: 30px;
+        padding: 20px 15px;
+
+    }
+
+    .project-card-wrapper {
+        height: 90%;
+        width: 30%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 12px;
+        padding: 10px;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding-bottom: 15px;
+    }
+
+    .box-a {
+        height: 99%;
+        width: 100%;
+        border-style: solid;
+        box-shadow: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        gap: 10px;
+        background-position: center;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 10px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+        color: rgb(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
+
+    }
+
+    .box-b {
+        height: 99%;
+        width: 99%;
+        border-style: solid;
+        box-shadow: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 12px;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 12px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+
+        color: rgb(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
 
 
-       
+    }
+
+    .box-c {
+        height: 100%;
+        width: 100%;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 10px;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 12px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+
+        color: rgb(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .card-2 {
+        height: auto;
+        min-height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        box-shadow: 10px;
+        gap: 30px;
+        padding: 20 15px;
+
+    }
 
 
+    .box-d {
+        height: 99%;
+        width: 99%;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 10px;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 12px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+        color: rgb(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .box-e {
+        height: 100%;
+        width: 100%;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 10px;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 12px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+        color: black(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
+
+    }
+
+    .box-f {
+        height: 100%;
+        width: 100%;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 10px;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 12px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+        color: black(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
+
+    }
+
+    .card-3 {
+        height: auto;
+        min-height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        box-shadow: 10px;
+        gap: 30px;
+        padding: 20 15px;
+
+    }
+
+    .box-G {
+        height: 100%;
+        width: 100%;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 10px;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 12px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+        color: black(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
+
+    }
+
+    .box-h {
+        height: 100%;
+        width: 100%;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url("https://thumbs.dreamstime.com/b/javascript-gold-text-black-background-d-rendered-royalty-free-stock-picture-image-can-be-used-online-website-banner-87918523.jpg");
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 10px;
+        box-shadow: 4px 4px 4px;
+        box-sizing: border-box;
+        align-items: center;
+        border-radius: 12px;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0, 3);
+        color: black(35, 65, 72);
+        cursor: pointer;
+        padding: 10px;
+
+    }
+
+    .project-link-wrapper {
+        text-decoration: none;
+
+        margin-top: 15px;
+    }
+
+    .btn-outline {
+        background: transparent;
+        border: 2px solid #061414;
+        color: #89b5c4;
+        padding: 8px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-weight: 600;
+    }
+
+    .btn-outline:hover {
+        background: #110f10;
+        color: #b1bfd3;
+        transform: translateY(-3px);
+    }
 </style>
+
 <body>
     <section class="javascript-main">
         <div class="project-heading">
 
             <H1>JavaScript project</H1>
-           <a href="./Project.html"><button>HTML</button></a>
-           <a href="./project-css.html"><button>CSS</button></a>
-              <a href="./project-js.html"><button>JAVASCRIPT</button></a>
-              <a href="./index.html"><button>Back to home</button></a>
-             
+            <a href="./Project.html"><button>HTML</button></a>
+            <a href="./project-css.html"><button>CSS</button></a>
+            <a href="./project-js.html"><button>JAVASCRIPT</button></a>
+            <a href="./index.html"><button>Back to home</button></a>
+
         </div>
 
         <div class="card-1">
 
             <div class="project-card-wrapper">
                 <div class="box-a project-content-box">
-                    
-                   
+
+
                 </div>
                 <a href="./javascript/js-ex-1.html" class="project-link-wrapper">
                     <button class="btn-outline">CALENDER</button>
@@ -320,7 +358,7 @@
 
             <div class="project-card-wrapper">
                 <div class="box-b project-content-box">
-                 
+
                 </div>
                 <a href="./javascript/js-exersis-4.html" class="project-link-wrapper">
                     <button class="btn-outline">AVERAGE BOX</button>
@@ -329,7 +367,7 @@
 
             <div class="project-card-wrapper">
                 <div class="box-c project-content-box">
-                   
+
                 </div>
                 <a href="./javascript/Bulb-exersice.html" class="project-link-wrapper">
                     <button class="btn-outline">VIEW BULB</button>
@@ -340,7 +378,7 @@
 
             <div class="project-card-wrapper">
                 <div class="box-d project-content-box">
-                    
+
                 </div>
                 <a href="./javascript/resume.html" class="project-link-wrapper">
                     <button class="btn-outline">resume</button>
@@ -349,31 +387,47 @@
 
             <div class="project-card-wrapper">
                 <div class="box-e project-content-box">
-                    
+
                 </div>
                 <a href="./javascript/funtion/assigment-no6.html" class="project-link-wrapper">
                     <button class="btn-outline">ATM Withdraw</button>
                 </a>
             </div>
-             <div class="project-card-wrapper">
+            <div class="project-card-wrapper">
                 <div class="box-f project-content-box">
-                    
+
                 </div>
                 <a href="./javascript/funtion/assigmentno-7.html" class="project-link-wrapper">
                     <button class="btn-outline">ATM</button>
                 </a>
             </div>
+        </div>
+
+        <div class="card-3">
             <div class="project-card-wrapper">
                 <div class="box-G project-content-box">
-                    
+
                 </div>
                 <a href="./javascript/datatype/exercise-3.html" class="project-link-wrapper">
                     <button class="btn-outline">MATH operation</button>
                 </a>
             </div>
-            
- 
+
+            <div class="project-card-wrapper">
+                <div class="box-h project-content-box">
+
+                </div>
+                <a href="./javascript/booleantype/assigmentno-9.html" class="project-link-wrapper">
+                    <button class="btn-outline">compare number</button>
+                </a>
+            </div>
+        </div>
+
+
+
+
         </div>
     </section>
 </body>
+
 </html>

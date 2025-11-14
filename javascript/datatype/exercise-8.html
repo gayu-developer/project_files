@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>convert weight into gram</h1>
+    <br>
+    <input type="number" id="weight" placeholder="">
+    <br>
+    <button onclick="clickbutton()">click</button>
+    <p id="result"></p>
+    <script>
+        function clickbutton(){
+            //input
+            let a = Number(document.getElementById("weight").value);
+            //process
+            let convert = a*1000;
+            //output
+            console.log(convert);
+            document.getElementById("result").innerHTML="the conversion weight into gram"+convert;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>find the paremter of square</h1>
+    <br>
+    <input type="number"  id="input-one" placeholder="">
+    <button onclick="clickbutton()">click</button>
+    <p id="result"></p>
+    <script>
+        function clickbutton(){
+            //input
+            let a = Number (document.getElementById("input-one").value);
+            //process
+            let paremeter= 4*a;
+            //output
+            console.log(paremeter);
+            document.getElementById("result").innerHTML="the parametr of square"+paremeter;
+        }
+    </script>
+</body>
+</html>

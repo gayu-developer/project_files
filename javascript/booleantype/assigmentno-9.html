@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+         body {
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+             height: 60vh;
+            width: 50vw;
+            display: flex;
+            background-color:rgb(233, 246, 247);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: start;
+            margin-top: 10px;
+           
+          
+;
+        }
+        input{
+            height: 8%;
+            width: 90%;
+            background-color: rgb(213, 217, 222);
+            border-radius: 10px;
+            display: flex;
+            border-color: rgb(245, 233, 233);
+        }
+        button{
+            height: 9%;
+            width: 90%;
+            background-color: rgb(118, 176, 209);
+            font-size: x-large;
+            border-radius: 10px;
+            border-color: aliceblue;
+        }
+        label{
+            font-size: x-large;
+        }
+        .last-box{
+            height: 20%;
+            width: 90%;
+            background-color: rgb(210, 215, 215);
+            font-size: xx-large;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        
+     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>NUMBER COMPARISUM</h1>
+        <br>
+        <label> First Number</label>
+        <br>
+        <input type="text" id="input-one"placeholder="enter your  first number">
+        <br>
+        <label>Second Number</label>
+        <br>
+        <input type="text"id="input-two" placeholder="enter your second number">
+        <br>
+        <button onclick="functionone()">compare Number (first>second)</button>
+        <br>
+        <div class="last-box">
+            <p id="result"></p>
+        </div>
+        <br>
+       
+    </div>
+    <script>
+        function functionone(){
+            //input
+            let num1 = Number(document.getElementById("input-one").value);
+            let num2 = Number(document.getElementById("input-two").value);
+            //process
+            let comapare = num1 < num2 ;
+            //output
+            document.getElementById("result").innerHTML=comapare;
+        }
+           
+    </script>
+</body>
+</html>

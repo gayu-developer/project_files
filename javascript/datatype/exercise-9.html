@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>km/hr into m/s</h1>
+    <br>
+    <input type="number" id="input-one">
+    <br>
+    <button onclick="clickbutton()">click</button>
+    <p id="result"></p>
+    <script>
+        function clickbutton(){
+            //input
+            let a = Number(document.getElementById("input-one").value);
+            //process
+            let kilometer = (5/8) * a;
+            //output
+            console.log(kilometer);
+            document.getElementById("result").innerHTML="the conversiom km/hr into m/s"+kilometer;
+        }
+    </script>
+    
+</body>
+</html>

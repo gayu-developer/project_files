@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>recetagle height and length</h1>
+    <br>
+    <input type="number" id="height" placeholder="find the height">
+    <br>
+    <input type="number" id="length" placeholder="find the weight">
+    <br>
+    <button onclick="clickbutton()">click</button>
+    <p id="result"></p>
+    <script>
+        function clickbutton(){
+            //input
+            let a = Number(document.getElementById("height").value);
+            let b= Number(document.getElementById("length").value);
+            //process
+            let rectangle =a*b;
+            //output
+            console.log(rectangle);
+            document.getElementById("result").innerHTML="the height of rectangle is"+rectangle;
+
+
+        }
+    </script>
+</body>
+</html>
