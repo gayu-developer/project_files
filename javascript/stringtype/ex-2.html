@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+justify-content: center;
+align-items: center;
+    }
+    .message-box{
+        width: 30%;
+        height: 20%;
+    box-shadow: 5px 5px 50px 2px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    
+    
+    
+    }
+    button{
+font-size:20px;
+background-color: chartreuse;
+padding: 10px;
+color: antiquewhite;
+
+
+ }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="message-box">
+        <br>
+        <button onclick="showmessage()">click</button>
+        <h2 id="display"></h2>
+    </div>
+    <script>
+function showmessage(){
+    let message = "welcome to javascript world !"
+    document.getElementById("display").innerHTML=message;
+}
+    </script>
+</body>
+</html>

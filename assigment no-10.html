@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+          body {
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-container{
+            height: 70vh;
+            width: 50vw;
+            display: flex;
+            background-color:white  ;
+            justify-content:center;
+            align-items:first baseline;
+            flex-direction: column;
+            text-align: start;
+             font-size: x-large;
+             box-shadow: 2px 3px 3px;
+             border-radius: 10px;
+             margin-bottom: 10px;
+             
+            
+
+            
+        }
+      
+       
+            
+        input{
+            height: 10%;
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            border-color: rgb(95, 90, 90);
+        }
+        button{
+            height: 15%;
+            width: 90%;
+            background-color: rgb(92, 213, 65);
+            font-size: x-large;
+            border-radius: 10px;
+            border-color:rgb(156, 209, 210);
+            gap: 2px;
+            
+        }
+        .button-one{
+            height: 10%;
+            width: 90%;
+            background-color:rgb(181, 207, 220);
+            border-color: black;
+            gap: 6px;
+            justify-content: center;
+           
+        }
+        .button-two{
+            height: 9%;
+            width: 90%;
+            background-color: black;
+            color: rgb(90, 197, 112) ;
+        }
+        
+        label{
+            font-size: xx-large;
+            align-items: flex-start;
+        }
+        .output-box{
+            height: 20%;
+            width: 90%;
+            background-color:white
+            ;
+            font-size: xx-large;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: small;
+            margin-left: 10px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="heading" id="heading">Name Combiner</h1>
+        <br>
+        
+             <label> First Name:</label>
+        <br>
+        <input type="text"id="input-one" >
+        <br>
+        <label>Last Name:</label>
+        <br>
+        <input type="text" id="input-two">
+        <br>
+        <button onclick="combiname()">Combine Names</button>
+        <br>
+         <button class="button-one">
+            <p>
+            <b class="display" id="display-1"></b>
+        </p>
+        <br>
+       
+        </button>
+        <button class="button-two">
+        
+        <pre id="display-2"></pre></button>
+   
+       
+    </div>
+        
+    <script>
+        function combiname(){
+//input
+            let a = document.getElementById("input-one").value;
+            let b = document.getElementById("input-two").value;
+            //process
+            let combine = a + " "  + b
+            //output
+           document.getElementById("display-1").innerHTML = "Full Name : " + combine;
+           
+           document.getElementById("display-2").innerHTML = "> Full Name : " + combine;
+    
+        }
+    </script>
+</body>
+</html>
