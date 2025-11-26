@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+ body {
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+      .main-container{
+             height: 60vh;
+            width: 50vw;
+            display: flex;
+            background-color:rgb(127, 149, 151);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: start;
+            margin-top: 10px;
+           
+          
+;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div main-container>
+        <h1>Average calculator</h1>
+        <br>
+        <label>First Number</label>
+        <br>
+        <input type="text" id="input-one" placeholder="Enter Your Number">
+        <br>
+        <label>Second Number</label>
+        <br>
+        <input type="text" id="input-two"placeholder="Enter Your Number">
+        <br>
+        <label>Third Number</label>
+        <br>
+        <input type="text" id="input-third" placeholder="Enter your Number">
+        <br>
+        <button onclick="Clickbutton()">Calculator Average</button>
+        <br>
+        <p>The average<b id="number1"></b><b id="number2"></b><b id="number3"></b> <b id="average"></b></p>
+
+    </div>
+<script>
+    function Clickbutton(){
+        //input
+        let num1 = document.getElementById("input-one").value
+        let num2 = document.getElementById("input-two").value
+        let num3 = document.getElementById("input-third").value
+        //process
+ let sum = num1+num2+num3;
+ let average = sum / 3;
+ //output
+ document.getElementById("number1").innerHTML = num1;
+ document.getElementById("number2").innerHTML = num2;
+ document.getElementById("number3").innerHTML = num3;
+ document.getElementById("sum").innerHTML = sum;
+ document.getElementById("average").innerHTML=average;
+  }
+</script>
+    
+</body>
+</html>

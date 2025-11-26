@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+body {
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 70vh;
+            width: 50vw;
+            display: flex;
+            background-color: rgb(172, 160, 160);
+            justify-content: center;
+            align-items: first baseline;
+            flex-direction: column;
+            text-align: start;
+            font-size: x-large;
+            box-shadow: 2px 3px 3px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          }
+          
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatiner">
+        <h1>Fovorite Programming Language</h1>
+        <br>
+        <button onclick="clickbutton()"> Tell US  Favorite Langauge</button>
+<p id="result"></p>
+<button class="button-one" id="output">your favorite langauge Is:Js</button>
+
+    </div>
+    <script>
+        function clickbutton(){
+            let langauge=prompt("enter your fav. langauge");
+            //output
+            document.getElementById("result").innerHTML="your favourite language:"+langauge;
+            alert(typeof(langauge) );
+        }
+    </script>
+</body>
+</html>

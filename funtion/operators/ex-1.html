@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .background{
+            height: 99vh;
+            width: 99vw;
+            background-color: #070607;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .main-container {
+            height: 69vh;
+            width: 30vw;
+            display: flex;
+            background-color: #F2F2F2;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: start;
+            margin-top: 2px;
+            font-size: large;
+            box-shadow: 2px 2px 2px;
+
+
+
+
+        }
+
+        input {
+            height: 10%;
+            width: 90%;
+            background-color: rgb(240, 241, 243);
+            border-radius: 7px;
+            box-shadow: 2px 2px 2px;
+
+            border-color: rgb(245, 233, 233);
+
+
+        }
+
+        button {
+            height: 10%;
+            width: 90%;
+            background-color: rgb(118, 176, 209);
+            font-size: x-large;
+            border-radius: 10px;
+            border-color: rgb(128, 133, 137);
+        }
+
+        .last-box {
+            height: 10%;
+            width: 90%;
+            background-color: rgb(246, 247, 248);
+            border-radius: 7px;
+
+            border-color: black;
+            box-shadow: 2px 2px 2px;
+        }
+
+        .secondbox {
+            height: 10%;
+            width: 90%;
+            background-color: rgb(246, 247, 248);
+            border-radius: 7px;
+box-shadow: 2px 2px 2px;
+            border-color: black;
+
+        }
+
+        label {
+            font-size: x-large;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background">
+
+   
+    <div class="main-container">
+        <h1>sum and differnce calculator</h1>
+
+        <label>First Nmber:</label>
+        <br>
+        <input type="text" id="input-one" placeholder="Enter number one">
+        <br>
+
+        <label> Second Number:</label>
+        <br>
+        <input type="text" id="input-two" placeholder="Enter number two">
+
+        <br>
+        <button onclick="calculate()">calculate</button>
+        <br>
+        <div class="last-box">
+            <p>Sum Of Two Number is :<b id="sum"></b></p>
+        </div>
+        <br>
+        <div class="secondbox">
+            <p>Differnce Of Two Number Is: <b id="diff"></b></p>
+        </div>
+
+
+    </div>
+     </div>
+    <script>
+        function calculate() {
+            //input
+            let num1 = document.getElementById("input-one").value;
+            let num2 = document.getElementById("input-two").value;
+            //process
+            let sum = Number(num1) + Number(num2);
+            let differnce = Number(num1) + Number(num2);
+            //output
+            document.getElementById("sum").innerHTML = sum;
+            document.getElementById("diff").innerHTML = diff;
+
+
+        }
+    </script>
+</body>
+
+</html>
